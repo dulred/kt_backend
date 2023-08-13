@@ -14,6 +14,13 @@ import java.util.List;
 public class ShallowTest {
 
 
+    /**
+     * 执行
+     *
+     * @param args 字符串数组参数
+     * @author dulred
+     * @date 2023/08/14
+     */
     public static void main(String[] args) {
 
         List<DemoData> list = testData();
