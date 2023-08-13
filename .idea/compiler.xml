@@ -11,27 +11,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tt" />
-      </profile>
-      <profile name="Annotation profile for ggkt_parent" enabled="true">
-        <sourceOutputDir name="../../target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
+        <module name="model" />
         <module name="service_utils" />
         <module name="service_vod" />
-      </profile>
-      <profile name="Annotation profile for model" enabled="true">
-        <sourceOutputDir name="../target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="model" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="model" options="" />
-      <module name="service_utils" options="" />
-      <module name="service_vod" options="" />
+      <module name="model" options="-parameters" />
+      <module name="service_utils" options="-parameters" />
+      <module name="service_vod" options="-parameters" />
       <module name="tt" options="-parameters" />
     </option>
   </component>
